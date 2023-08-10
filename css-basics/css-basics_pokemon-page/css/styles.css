@@ -84,6 +84,7 @@ section {
 .image-fluid {
   width: 100%;
   height: auto;
+  background-size: cover;
 }
 
 /* Note: After finishing all tasks this class should also work. This means that the image should flexibly adjust its size to the width of the viewport. */
