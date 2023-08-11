@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-granite: rgb(37 38 41 / 100%);
+  --color-nemo: rgb(255, 74, 17);
+  --color-foam: rgb(255, 255, 255);
+  --letter-spacing-big: 0.025em;
+}
+
 body {
   margin: 0;
   font-family: system-ui;
@@ -11,25 +18,25 @@ body {
 }
 
 header {
-  background: rgb(37 38 41 / 100%);
+  background: var(--color-granite);
 }
 
 h1 {
   text-align: center;
-  color: white;
+  color: var(--color-foam);
   line-height: 1.4;
   margin: 0;
-  letter-spacing: 0.025em;
+  letter-spacing: var(--letter-spacing-big);
   text-transform: uppercase;
   padding-block: 16px;
 }
 
 h2 {
-  letter-spacing: 0.025em;
+  letter-spacing: var(--letter-spacing-big);
 }
 
 strong {
-  color: #ff4a11;
+  color: var(--color-nemo);
 }
 
 section {
@@ -57,12 +64,12 @@ figure {
   gap: 10px;
   margin: 0;
   padding: 10px;
-  background-color: #ff4a11ff;
+  background-color: var(--color-nemo);
   border-radius: 4px;
 }
 
 figcaption {
-  color: rgb(255 255 255);
+  color: var(--color-foam);
 }
 
 nav {
@@ -76,24 +83,24 @@ a {
   font-size: smaller;
   padding: 8px;
   border-radius: 4px;
-  background-color: hsl(14 100% 53%);
-  color: #fff;
+  background-color: var(--color-nemo);
+  color: var(--color-foam);
 }
 
 a:hover,
 a:focus-visible {
-  background-color: rgb(37 38 41);
+  background-color: var(--color-granite);
   text-decoration: none;
 }
 
 mark {
-  background-color: rgb(255 74 17);
-  color: #ffffff;
+  background-color: var(--color-nemo);
+  color: var(--color-foam);
   border-radius: 4px;
-  letter-spacing: 0.025em;
+  letter-spacing: var(--letter-spacing-big);
 }
 
 ::selection {
-  background-color: #252629;
-  color: #ff4a11;
+  background-color: var(--color-granite);
+  color: var(--color-nemo);
 }
