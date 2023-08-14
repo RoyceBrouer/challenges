@@ -76,7 +76,7 @@ nav a {
 }
 
 /* 5. These styles should apply to the main navigation link corresponding to the current page */
-a.current {
+nav a.current {
   outline: 2px dashed red;
   color: #22e781;
 }
@@ -88,6 +88,8 @@ footer a {
 }
 
 /* 7. These styles should apply to all paragraphs and all lists (please use a class selector) */
+
+/*p.text,*/
 p,
 .list {
   outline: 2px dashed red;
@@ -123,7 +125,7 @@ main .list {
 }
 
 /* 12. These styles should apply to all list items */
-.list .list {
+.list .list/*not li? doch glaube*/ {
   outline: 2px dashed red;
   margin: 0 0 0.5rem 0;
 }
@@ -136,7 +138,7 @@ main .list {
 }
 
 /* 14. These styles should apply to all list items in nested lists */
-FIX_ME {
+ul.list > li > ul.list > li {
   outline: 2px dashed red;
   margin: 0;
   color: #2673bb;
