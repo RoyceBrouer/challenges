@@ -9,4 +9,9 @@ li ::before {
 
 li {
   list-style: "🧡";
+  font-size: 1rem;
+}
+
+ul {
+  font-size: 2rem;
 }
