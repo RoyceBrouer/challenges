@@ -243,11 +243,29 @@ CSS when certain conditions that we declare are met - such as a certain viewport
 width, etc. */
 
 /* Media Query Tablet */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* .card-section {
+    flex-direction: column;
+    flex-wrap: wrap;
+  } */
+
+  body {
+    height: 100vh;
+    width: 100vh;
+    /* display: flex; */
+  }
+
+  .card-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    /* height: 20%; */
+  }
+}
 
 /* Media Query Desktop */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+}
