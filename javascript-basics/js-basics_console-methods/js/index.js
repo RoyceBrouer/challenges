@@ -8,11 +8,11 @@ const hacking = "Happy Hacking!";
 
 console.log(hacking);
 
-console.clear(coding, hacking);
+console.clear(coding, hacking); //or just console.clear() ?
 
 const error = "This is an error!";
 
-console.log(error);
+console.error(error);
 
 // The exercise starts here!
 
