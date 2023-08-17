@@ -25,6 +25,9 @@ body {
   margin: 0 auto;
   padding: 2rem;
   max-width: 50rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
 
   /* Add styles to the container */
 }
