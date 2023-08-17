@@ -10,7 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const title = "today is a pms day grey grey grey hurray";
+const post = "bla bla bla bla bla sorry I feel a little uncreative <3";
+let likes = 1; //def no more ;-)
+const creator = "meeeeee";
+let isReported = false;
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +22,13 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+console.log(title);
+console.log(post);
+console.log(likes);
+console.log(creator);
+console.log(isReported);
+
+likes += 1;
+console.log(likes);
 
 // --^-- write your code here --^--
