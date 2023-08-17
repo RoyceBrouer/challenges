@@ -12,7 +12,7 @@ console.clear(coding, hacking);
 
 const error = "This is an error!";
 
-console.log(error);
+console.error(error);
 
 // The exercise starts here!
 
