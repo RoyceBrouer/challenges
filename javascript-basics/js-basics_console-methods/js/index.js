@@ -1,5 +1,19 @@
 console.clear();
 
+const coding = "Happy coding!";
+
+console.log(coding);
+
+const hacking = "Happy Hacking!";
+
+console.log(hacking);
+
+console.clear(coding, hacking);
+
+const error = "This is an error!";
+
+console.log(error);
+
 // The exercise starts here!
 
 // All console methods can be found on mdn for reference: https://developer.mozilla.org/en-US/docs/Web/API/console
