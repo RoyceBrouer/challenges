@@ -49,6 +49,7 @@ function updateOutputColor(size1, size2) {
     outputSection.style.backgroundColor = "var(--green)";
   }
 }
+//better would have been a turnery
 
 // 1. Write a function `updateOutputColor` with two parameters: `size1` and `size2`.
 // 2. Set the background color of the `outputSection` to "var(--red)", if we loose pizza. Otherwise, the background color should be set to "var(--green)"
