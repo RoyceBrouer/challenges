@@ -50,13 +50,13 @@ console.log(bookNumber1);
 
 // --v-- write your code here --v--
 
-function logBookData({ book }) {
+function logBookData(book) {
   console.log("Title: " + book.bookTitle);
   console.log("Author: " + book.author);
   console.log("Rating: " + book.rating);
   console.log("Number of Sales: " + book.NumberOfSales);
 }
 
-logBookData({ bookNumber1 });
+logBookData(bookNumber1);
 
 // --^-- write your code here --^--
