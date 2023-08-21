@@ -22,13 +22,44 @@ Change the contents of this page depending on the current day and time.
 
 const display = document.querySelector('[data-js="display"]');
 
-function getGreeting() {
+function getGreeting(time) {
+  if (time >= 6 && time <= 12) {
+    return "Good Morning";
+  } else if (time >= 13 && time <= 18) {
+    return "Good Afternoon";
+  } else if (time >= 19 && time <= 22) {
+    return "Good Evening";
+  } else if (time >= 23 && time <= 5) {
+    return "Good Night";
+  }
+}
+const time = new Date().getHours();
+
+const resultGreeting = getGreeting(time);
+
+console.log(resultGreeting);
+
+function getDayColor(weekday) {
+  if (weekday === "monday") {
+    return "darkgray";
+  } else if (
+    weekday === "tuesday" ||
+    weekday === "wednesday" ||
+    weekday === "thursday" ||
+    weekday === "friday"
+  ) {
+    return "lightblue";
+  } else {
+    return "hotpink";
+  }
   // Code here
 }
 
-function getDayColor() {
-  // Code here
-}
+const weekday = new Date().getDay();
+
+const resultGetDayColor = getDayColor(weekday);
+
+console.log(resultGetDayColor);
 
 display.textContent = getGreeting();
 document.body.style.backgroundColor = getDayColor();
