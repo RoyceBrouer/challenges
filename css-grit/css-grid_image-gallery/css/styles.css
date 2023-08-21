@@ -40,21 +40,34 @@ body {
 .teaser-grid__teaser--spring {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://source.unsplash.com/random/600x300?spring");
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 .teaser-grid__teaser--summer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://source.unsplash.com/random/600x300?summer");
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 .teaser-grid__teaser--autumn {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://source.unsplash.com/random/600x300?autumn");
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 .teaser-grid__teaser--winter {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://source.unsplash.com/random/600x300?winter");
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .teaser-grid__link {
   color: white;
   text-decoration: none;
+}
+
+.teaser-grid {
+  display: grid;
+  grid-template: 50% 50% / 50% 50%;
 }
