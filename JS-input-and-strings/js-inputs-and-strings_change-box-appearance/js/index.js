@@ -23,7 +23,7 @@ const rotationSlider = document.querySelector('[data-js="input-rotation"]');
 const box = document.querySelector('[data-js="box"]');
 
 colorSlider.addEventListener("input", () => {
-  box.style.backgroundColor = `hsl(${colorSlider.value} 80% 40%)`;
+  box.style.backgroundColor = `hsl(${colorSlider.value}deg, 70%, 60%)`;
 });
 
 borderRadiusSlider.addEventListener("input", () => {
