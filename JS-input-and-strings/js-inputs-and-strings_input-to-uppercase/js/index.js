@@ -10,3 +10,9 @@ Convert the input value to uppercase when clicking the button
 Hint: Access the value by using `.value` on the input element
 
 */
+const button = document.querySelector('[data-js="button-uppercase"]');
+const input = document.querySelector('[data-js="first-input"]');
+
+button.addEventListener("click", () => {
+  input.textContent = input.value.toUpperCase();
+});
