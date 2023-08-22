@@ -1,0 +1,17 @@
+* {
+  border-size: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li ::before {
+}
+
+li {
+  list-style: "🧡";
+  font-size: 1rem;
+}
+
+ul {
+  font-size: 2rem;
+}
