@@ -2,20 +2,7 @@ console.clear();
 
 const form = document.querySelector('[data-js="form"]');
 const tosError = document.querySelector('[data-js="tos-error"]');
-// const checkBox = document.querySelector("#tos");
-
-// form.addEventListener("submit", (event) => {
-//   event.preventDefault();
-//   const formData = new FormData(event.target);
-//   const data = Object.fromEntries(formData);
-//   console.log("data: ", data);
-// });
-
-// function hideTosError() {
-//   if (checkBox.checked) {
-//     tosError.setAttribute("hidden", true);
-//   }
-// }
+const success = document.querySelector('[data-js="success"]');
 
 function showTosError() {
   tosError.removeAttribute("hidden");
@@ -25,14 +12,25 @@ function hideError() {
   tosError.setAttribute("hidden", "");
 }
 
+function hideSuccess() {
+  success.setAttribute("hidden", "");
+}
+
+function showSuccess() {
+  success.removeAttribute("hidden");
+}
+
+hideSuccess();
+
 hideError();
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
+  const checkBox = document.querySelector("#tos");
   // --v-- write your code here --v--
-  if (tos.checked) {
+  if (checkBox.checked) {
     alert("Form submitted");
+    showSuccess();
     return;
   }
   showTosError();
