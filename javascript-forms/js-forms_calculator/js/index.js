@@ -26,7 +26,10 @@ form.addEventListener("submit", (event) => {
 
   // --v-- write your code here --v--
   const numberA = event.target.numberA.value;
-  console.log(numberA);
+  const numberB = event.target.numberB.value;
+  const operator = event.target.operator.value;
+  console.log(event.target.radio.value)
+  switch(operator)
   // --^-- write your code here --^--
 
   resultOutput.textContent = result;
