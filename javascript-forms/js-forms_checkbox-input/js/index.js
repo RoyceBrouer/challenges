@@ -22,7 +22,7 @@ function showTosError() {
 }
 
 function hideError() {
-  tosError.style.Attribute("hidden", "");
+  tosError.setAttribute("hidden", "");
 }
 
 hideError();
