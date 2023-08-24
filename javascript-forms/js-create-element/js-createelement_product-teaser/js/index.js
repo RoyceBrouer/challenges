@@ -9,3 +9,28 @@ const category3 = "Plankton Diet";
 const price = "149,99 €";
 const imageSrc =
   "https://unsplash.com/photos/3VOTHTrE614/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU5NTM3NTA2&force=true&w=640";
+
+
+  const secondFish = document.createElement('article');
+  secondFish.classList.add("product");
+
+  const 2ndproductbody = document.createElement('div');
+  2ndproductbody.classList.add('product__body');
+
+  const title2ndFish = document.createElement('h1');
+  title2ndFish.textContent(name);
+
+
+
+/* This exercise includes an example of a product 
+  teaser for an online shop. Please append a second product 
+  teaser to the page with JavaScript based on the data given 
+  in the `index.js` file.
+
+Use `.innerHTML` to generate the HTML 
+elements for the teaser. Use string interpolation 
+to include the given data into the HTML.
+
+Add an event listener to the "buy" button of the 
+second product teaser. When clicking the button, 
+the product's name and price should be logged to the console.*/
