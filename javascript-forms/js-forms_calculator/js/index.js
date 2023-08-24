@@ -25,11 +25,27 @@ form.addEventListener("submit", (event) => {
   let result;
 
   // --v-- write your code here --v--
-  const numberA = event.target.numberA.value;
-  const numberB = event.target.numberB.value;
-  const operator = event.target.operator.value;
-  console.log(event.target.radio.value)
-  switch(operator)
+
+  const NumberA = +form.elements.numberA.value;
+  const NumberB = +form.elements.numberB.value;
+  function operator() {
+    if (form.elements.operator.value === "addition") {
+      return Number(NumberA) + Number(NumberB);
+    } else if (form.elements.operator.value === "subtraction") {
+      return Number(NumberA) - Number(NumberB);
+    } else if (form.elements.operator.value === "multiplication") {
+      return Number(NumberA) + Number(NumberB);
+    } else if (form.elements.operator.value === "division") {
+      return Number(NumberA) / Number(NumberB);
+    }
+  }
+  result = operator();
+
+  // const numberA = event.target.numberA.value;
+  // const numberB = event.target.numberB.value;
+  // const operator = event.target.operator.value;
+  // console.log(event.target.radio.value)
+  // switch(operator)
   // --^-- write your code here --^--
 
   resultOutput.textContent = result;
