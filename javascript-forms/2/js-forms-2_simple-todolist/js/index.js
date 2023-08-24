@@ -13,6 +13,18 @@ form.addEventListener("submit", (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
   console.log(data);
+  const listItem = document.createElement("li");
+  // listItem.innerHTML = `<h4>${data.headline}</h4> <p>${data.task}</p>`;
+  // don't use innerHTML for user data --> to unsafe!
+  const headLinetoDo = document.createElement("h4");
+  headLinetoDo.textContent = data.headline;
+
+  const actualToDo = document.createElement("p");
+  actualToDo.textContent = data.task;
+  todoList.append(listItem);
+  listItem.append(headLinetoDo);
+  listItem.append(actualToDo);
+
   reset(form);
 });
 
