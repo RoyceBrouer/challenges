@@ -23,13 +23,19 @@ const cards = [
   },
 ];
 
-const onlyCardWithIdTwo = null;
+const onlyCardWithIdTwo = cards.filter((card) => card.id === 2);
 
-const allCardsWith3Tags = null;
+const allCardsWith3Tags = cards.filter((card) => card.tag[2]); //better: card.tags.length === 3)
 
-const allCardsThatAreNotBookmarked = null;
+const allCardsThatAreNotBookmarked = cards.filter(
+  (card) => card.isBookmarked === false
+);
 
-const allCardsWithTagsHTMLOrJSThatAreBookmarked = null;
+const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
+  return card.isBookmarked.filter((card) => {
+    card.tags.includes("html") || cards.tags.includes("js");
+  });
+}); //wonder what is my return now?
 
 export {
   onlyCardWithIdTwo,
