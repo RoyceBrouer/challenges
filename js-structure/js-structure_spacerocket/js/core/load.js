@@ -1,4 +1,6 @@
 import { getRocket } from "./rocket.js";
+import { NFSAT } from "../payload/satellites.js";
+import { FISHSAT } from "../payload/satellites.js";
 
 export function loadPayload(satellite) {
   const rocket = getRocket();
