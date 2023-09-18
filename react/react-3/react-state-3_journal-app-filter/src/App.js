@@ -38,7 +38,14 @@ const initialEntries = [
 
 function App() {
   const [entries, setEntries] = useState(initialEntries);
-
+  const [filter, setFilter] = useState("all");
+  const favoriteEntries = entries.filter((entry) => entry.isFavorite === true); //why explicitely no state?
+  const handleShowFavoriteEntries = () => {
+    setFilter("favorites");
+  };
+  const handleShowAllEntries = () => {
+    setFilter("all");
+  };
   function handleAddEntry(newEntry) {
     const date = new Date().toLocaleDateString("en-us", {
       dateStyle: "medium",
@@ -54,14 +61,22 @@ function App() {
     );
   }
 
+  const allEntriesCount = entries.length;
+  const favoriteEntriesCount = favoriteEntries.length;
+
   return (
     <div className="app">
       <Header />
       <main className="app__main">
         <EntryForm onAddEntry={handleAddEntry} />
         <EntriesSection
-          entries={entries}
+          onShowAllEntries={handleShowAllEntries}
+          onShowFavoriteEntries={handleShowFavoriteEntries}
+          entries={filter === "all" ? entries : favoriteEntries}
+          filter={filter}
           onToggleFavorite={handleToggleFavorite}
+          allEntriesCount={allEntriesCount}
+          favoriteEntriesCount={favoriteEntriesCount}
         />
       </main>
       <Footer />
